@@ -18,7 +18,8 @@ define('UISample', ['orm', 'forms', 'ui','FancyWidget', '../CustomWidgets/Button
         
         var btn = new Button(form.pnlPlaceholder3);
         btn.height=30;
-        btn.width=60;
+        btn.width=160;
+        btn.text = "Another text";
         btn.onActionPerformed = function(){
             console.log("hello world");
         }
