@@ -2,7 +2,7 @@
  * 
  * @author jskonst
  */
-define('UISample', ['orm', 'forms', 'ui','FancyWidget', '../CustomWidgets/Button'], function (Orm, Forms, Ui,FancyWidget, Button, ModuleName) {
+define('UISample', ['orm', 'forms', 'ui','FancyWidget', '../CustomWidgets/Button', '../CustomWidgets/Dropdown'], function (Orm, Forms, Ui,FancyWidget, Button, Dropdown, ModuleName) {
     function module_constructor() {
         var self = this
                 , model = Orm.loadModel(ModuleName)
@@ -24,6 +24,12 @@ define('UISample', ['orm', 'forms', 'ui','FancyWidget', '../CustomWidgets/Button
             console.log("hello world");
         }
         
+        //dropdown
+        var dropdown = new Dropdown(form.pnlPlaceholder4);
+        dropdown.height=30;
+        dropdown.width=350;
+        dropdown.text="Hello";
+//        btn.text = "Another text";
        
         
         
